@@ -1,1 +1,0 @@
-Write a function that reverses a string in place. You *must* use three stacks.
