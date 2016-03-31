@@ -3,6 +3,10 @@ import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+// Running this solution:
+// 1. javac Anagram.java
+// 2. java Anagram demo < ../wordsEn.txt
+
 public class Anagram {
 
   public static boolean isAnagram(String baseWord, String otherWord) {
