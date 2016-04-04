@@ -10,17 +10,13 @@ import java.util.Scanner;
 public class Anagram {
 
   public static boolean isAnagram(String baseWord, String otherWord) {
-    return sort(baseWord).equals(sort(otherWord));
+    return Arrays.equals(sortChars(baseWord), sortChars(otherWord));
   }
 
-  private static String sort(String word) {
-    char[] chars = canonicalize(word);
+  private static char[] sortChars(String word) {
+    char[] chars = word.toLowerCase().toCharArray();
     Arrays.sort(chars);
-    return new String(chars);
-  }
-
-  private static char[] canonicalize(String word) {
-    return word.toLowerCase().toCharArray();
+    return chars;
   }
 
   public static void main(String args[]) {
