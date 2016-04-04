@@ -34,7 +34,7 @@ public class Anagram {
 
     Scanner scanner = new Scanner(System.in);
     while (scanner.hasNext()) {
-      String currentWord = scanner.next().toLowerCase();
+      String currentWord = scanner.next();
       if (Anagram.isAnagram(baseWord, currentWord)) {
         anagrams.add(currentWord);
       }
